@@ -3,7 +3,7 @@ package ua.lviv.iot.lab1;
 public class Printer {
     private String name;
     private double performancePagePerMinute;
-    private int priceInUSDDollars;
+    private int priceInUAH;
     private double wageInKg;
     private String mark;
     private static double powerConsumptionInWatt = 1.2;
@@ -13,18 +13,18 @@ public class Printer {
     public Printer() {
     }
 
-    public Printer(String name, double performancePagePerMinute, int priceInUSDDollars, double wageInKg, String mark, Boolean isColor, String wayToConnect) {
+    public Printer(String name, double performancePagePerMinute, int priceInUAH, double wageInKg, String mark, Boolean isColor, String wayToConnect) {
         this.name = name;
         this.performancePagePerMinute = performancePagePerMinute;
-        this.priceInUSDDollars = priceInUSDDollars;
+        this.priceInUAH = priceInUAH;
         this.wageInKg = wageInKg;
         this.mark = mark;
         this.isColor = isColor;
         this.wayToConnect = wayToConnect;
     }
 
-    public Printer(String name, double performancePagePerMinute, int priceInUSDDollars, double wageInKg) {
-        this(name, performancePagePerMinute, priceInUSDDollars, wageInKg, null, null, null);
+    public Printer(String name, double performancePagePerMinute, int priceInUAH, double wageInKg) {
+        this(name, performancePagePerMinute, priceInUAH, wageInKg, null, null, null);
     }
 
     public String getName() {
@@ -43,12 +43,12 @@ public class Printer {
         this.performancePagePerMinute = performancePagePerMinute;
     }
 
-    public int getPriceInUSDDollars() {
-        return priceInUSDDollars;
+    public int getPriceInUAH() {
+        return priceInUAH;
     }
 
-    public void setPriceInUSDDollars(int priceInUSDDollars) {
-        this.priceInUSDDollars = priceInUSDDollars;
+    public void setPriceInUAH(int priceInUAH) {
+        this.priceInUAH = priceInUAH;
     }
 
     public double getWageInKg() {
@@ -97,7 +97,7 @@ public class Printer {
         return "Printer{" +
                 "name='" + name + '\'' +
                 ", performance_page_per_sec=" + performancePagePerMinute +
-                ", priceInUSDDollars=" + priceInUSDDollars +
+                ", priceInUSDDollars=" + priceInUAH +
                 ", wageInKG=" + wageInKg +
                 ", mark='" + mark + '\'' +
                 ", isColor=" + isColor +
@@ -117,7 +117,7 @@ public class Printer {
     public void resetValues(String name, double performance_page_per_sec, int priceInUSDDollars, double wageInKG, String mark, Boolean isColor, String wayToConnect) {
         this.name = name;
         this.performancePagePerMinute = performance_page_per_sec;
-        this.priceInUSDDollars = priceInUSDDollars;
+        this.priceInUAH = priceInUSDDollars;
         this.wageInKg = wageInKG;
         this.mark = mark;
         this.isColor = isColor;
