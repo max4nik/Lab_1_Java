@@ -114,10 +114,10 @@ public class Printer {
         System.out.println("From non-static method: " + Printer.powerConsumptionInWatt);
     }
 
-    public void resetValues(String name, double performance_page_per_sec, int priceInUSDDollars, double wageInKG, String mark, Boolean isColor, String wayToConnect) {
+    public void resetValues(String name, double performance_page_per_sec, int priceInUAH, double wageInKG, String mark, Boolean isColor, String wayToConnect) {
         this.name = name;
         this.performancePagePerMinute = performance_page_per_sec;
-        this.priceInUAH = priceInUSDDollars;
+        this.priceInUAH = priceInUAH;
         this.wageInKg = wageInKG;
         this.mark = mark;
         this.isColor = isColor;
